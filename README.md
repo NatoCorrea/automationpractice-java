@@ -1,8 +1,8 @@
-# Orangehrm-java
+# Automationpractice-java
 
 Repositório criado para estudo de automação de testes com Java 23.0.1 - JDK (SE), Apache Maven (com variáveis de ambiente), IntelliJ, Selenium, JUnit e Cucumber.
 
-Todos os cenários de testes foram desenvolvidos no site https://opensource-demo.orangehrmlive.com/
+Todos os cenários de testes foram desenvolvidos no site www.automationpractice.pl
 
 O primeiro passo é configurar o arquivo **pom.xml**:
 - 
