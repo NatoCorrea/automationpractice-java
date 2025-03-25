@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Orangehrm-java
 
 Repositório criado para estudo de automação de testes com Java 23.0.1 - JDK (SE), Apache MAven (com variáveis de ambiente), IntelliJ, Selenium, JUnit e Cucumber.
@@ -92,3 +93,8 @@ Esta classe da suporte ao teste
 4. teste()
 5. throws InterruptedException (Caso tenha Assertions)
 6. uso do localizador By.cssSelector e By.xpath
+=======
+# Orangehrm
+Testes de estudos de automação no site https://opensource-demo.orangehrmlive.com/
+  Testes afim de por em pratica meu conhecimento em testes automatizados utilizando Java + Selenium.
+>>>>>>> 30ecc7a18ec8f855b6be069724693059693ec669
