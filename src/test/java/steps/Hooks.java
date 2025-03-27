@@ -1,11 +1,12 @@
 package steps;
 
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.WebDriver;
 import runner.BrowserFactory;
 
 public class Hooks {
+
     public static WebDriver driver;
 
     @Before

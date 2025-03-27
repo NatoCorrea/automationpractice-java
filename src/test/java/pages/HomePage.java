@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import support.Actions;
 
+
 public class HomePage extends Actions {
 
     public HomePage(WebDriver navegador){
@@ -17,7 +18,7 @@ public class HomePage extends Actions {
         return get_url();
     }
 
-    public void clicarNoBotaoDeLogin(){
+    public void clicarBtnLogar(){
         click(btnLogar);
     }
 }

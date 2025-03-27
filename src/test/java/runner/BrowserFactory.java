@@ -29,7 +29,7 @@ public class BrowserFactory {
 
         navegador = new ChromeDriver(options);
         navegador.manage().window().maximize();
-        navegador.get("http://www.automationpractice.pl/");
+        navegador.get("http://www.automationpractice.pl/index.php");
         return navegador;
     }
 }

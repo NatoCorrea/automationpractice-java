@@ -17,7 +17,6 @@ import org.junit.runner.RunWith;
                 "html:target/cucumber/index.html",
                 "json:target/cucumber/index.json"
         }
-
 )
 
 public class RunCucumberTest {
