@@ -30,10 +30,19 @@ public class LoginSteps {
         loginPage.preencherLogin("testando123@teste.com", "12345");
         loginPage.clicarBtnLogin();
     }
+    @Entao("o sistema ira direcionar para a tela de login")
+    public void o_sistema_ira_direcionar_para_a_tela_de_login() {
+        Assert.assertEquals(loginPage.validaLoginPage(),
+                "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
+    }
+    @Quando("preencher o campo email {string} e o campo senha {string}")
+    public void preencher_o_campo_email_e_o_campo_senha(String email, String senha) {
+        loginPage.preencherLogin(email, senha);
+        loginPage.clicarBtnLogin();
+    }
 
-    @Entao("o sistema direcionara para tele my account")
-    public void o_sistema_direcionara_para_tele_my_account() {
-        Assert.assertEquals(myAccountPage.validaMyAccountPage(),
-                "MY ACCOUNT");
+    @Entao("o sistema mostrara uma mensagem {string} de erro")
+    public void o_sistema_mostrara_uma_mensagem_de_erro(String mensagem) {
+        Assert.assertEquals(loginPage.validaMessage(), mensagem);
     }
 }

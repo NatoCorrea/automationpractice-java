@@ -22,10 +22,6 @@ public class HomeSteps {
     public void clicar_no_botao_de_login() {
         homePage.clicarBtnLogar();
     }
-    @Entao("o sistema ira direcionar para a tela de login")
-    public void o_sistema_ira_direcionar_para_a_tela_de_login() {
-        Assert.assertEquals(loginPage.validaLoginPage(),
-                "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
-    }
+
 
 }

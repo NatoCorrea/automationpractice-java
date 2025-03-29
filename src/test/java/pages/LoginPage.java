@@ -13,6 +13,7 @@ public class LoginPage extends Actions {
     private By fieldEmail = By.id("email");
     private By fieldPasswd = By.id("passwd");
     private By btnLogin = By.id("SubmitLogin");
+    private By msgError = By.cssSelector("ol > li");
 
     public String validaLoginPage(){
         return get_url();
@@ -25,6 +26,9 @@ public class LoginPage extends Actions {
 
     public void clicarBtnLogin(){
         click(btnLogin);
+    }
+    public String validaMessage(){
+        return get_text(msgError);
     }
 
 }
