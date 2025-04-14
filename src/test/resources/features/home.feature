@@ -1,7 +1,6 @@
 #language: pt
 
-  Funcionalidade: Navegacao
-    Realizar suite de testes na home page
+  Funcionalidade: Realizar suite de testes na home page
 
   @AcessarLoginPage
     Cenario: Acessar pagina de login

@@ -13,7 +13,7 @@ public class AuthenticationPage extends Actions {
     private By fieldPasswd = By.id("passwd");
     private By btnLogin = By.id("SubmitLogin");
     private By msgError = By.cssSelector("ol > li");
-    private By title = By.id("center_column");
+    private By title = By.className("page-heading");
     private By fieldNewEmail = By.id("email_create");
     private By btnCadastrar = By.id("SubmitCreate");
 

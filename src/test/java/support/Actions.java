@@ -32,6 +32,7 @@ public class Actions extends Hooks {
             System.out.println(erro);
         }
     }
+
     public void click_index(By element, int index){
         try {
             wait_elements_visible(element, 10);

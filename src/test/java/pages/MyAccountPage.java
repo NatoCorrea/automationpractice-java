@@ -10,9 +10,35 @@ public class MyAccountPage extends Actions {
         driver = navegador;
     }
     private By title = By.className("page-heading");
+    private By btnFirstAdress = By.cssSelector("a[title='Add my first address']");
+    private By btnOrderHistory = By.className("icon-list-ol");
+    private By btnMyCreditSlips = By.className("icon-file-o");
+    private By btnMyAdress = By.cssSelector("a[title='Addresses']");
+    private By btnPersonalInformation = By.cssSelector("icon-user");
 
     public String validaMyAccountPage(){
       return get_text(title);
     }
+
+    public void clickBtnFirstAdress(){
+        click(btnFirstAdress);
+    }
+
+    public void clickBtnOrderHistory(){
+        click(btnOrderHistory);
+    }
+
+    public void clickBtnMyCreditSlips(){
+        click(btnMyCreditSlips);
+    }
+    public void clickBtnMyAdress(){
+        click(btnMyAdress);
+    }
+    public void clickBtnPersonalInformation(){
+        click(btnPersonalInformation);
+    }
+
+
+
 }
 

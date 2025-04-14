@@ -7,7 +7,7 @@
     Cenario: Login com sucesso
       Dado que o usuario esteja na tela de autenticacao
       Quando preencher os campos com dados validos
-      Entao o sistema direcionara para tele my account
+      Entao o sistema direcionara para tela my account
 
     @LoginFalhou
     Esquema do Cenario: Realizar os teste de "<fluxo>" de excecao de login

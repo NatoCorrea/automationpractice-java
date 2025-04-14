@@ -19,13 +19,7 @@ public class LoginSteps {
     HomePage homePage = new HomePage(driver);
     MyAccountPage myAccountPage = new MyAccountPage(driver);
 
-    @Dado("que o usuario esteja na tela de autenticacao")
-    public void que_o_usuario_esteja_na_tela_de_autenticacao() {
-//        Assert.assertEquals(authPage.validaAuthenticationPage(), "Authentication");
-        homePage.clicarBtnLogar();
-        Assert.assertEquals(authPage.validaLoginPage(),
-                "http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
-    }
+
     @Quando("preencher os campos com dados validos")
     public void preencher_os_campos_com_dados_validos() {
         authPage.preencherLogin("testando123@teste.com", "12345");
