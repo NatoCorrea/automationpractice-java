@@ -21,6 +21,12 @@
     Quando clicar no botao Order history and details
     Entao o sistema redirecionara para pagina de historico de pedidos
 
+  @AcessarMyCreditSlips
+  Cenario: Acessar a pagina de creditos
+    Dado que o usuario esteja logado e na My Account Page
+    Quando clicar no botao My credit slips
+    Entao o sistema redirecionara para a pagina de creditos
+
 #      Exemplos:
 #        | fluxo                        |
 #        | Acessar Add My First Address |

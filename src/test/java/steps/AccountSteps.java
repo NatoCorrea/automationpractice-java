@@ -15,6 +15,7 @@ public class AccountSteps {
     AuthenticationPage authPage = new AuthenticationPage(driver);
     MyAdressPage adressPage = new MyAdressPage(driver);
     OrderHistoryPage orderHistoryPage = new OrderHistoryPage(driver);
+    CreditSlipsPage creditSlipsPage = new CreditSlipsPage(driver);
 
     @Entao("o sistema direcionara para tela my account")
     public void o_sistema_direcionara_para_tele_my_account() {
@@ -45,11 +46,19 @@ public class AccountSteps {
     public void clicar_no_botao_order_history_and_details() {
         myAccountPage.clickBtnOrderHistory();
     }
+
     @Entao("o sistema redirecionara para pagina de historico de pedidos")
     public void o_sistema_redirecionara_para_pagina_de_historico_de_pedidos() {
         Assert.assertEquals(orderHistoryPage.validaOrderHistoryPage(), "ORDER HISTORY");
     }
-
+    @Quando("clicar no botao My credit slips")
+    public void clicar_no_botao_my_credit_slips() {
+        myAccountPage.clickBtnMyCreditSlips();
+    }
+    @Entao("o sistema redirecionara para a pagina de creditos")
+    public void o_sistema_redirecionara_para_a_pagina_de_creditos() {
+        Assert.assertEquals(creditSlipsPage.validaCreditSlipsPage(), "CREDIT SLIPS");
+    }
 
 }
 

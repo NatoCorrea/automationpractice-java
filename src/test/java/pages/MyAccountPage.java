@@ -9,7 +9,7 @@ public class MyAccountPage extends Actions {
     public MyAccountPage(WebDriver navegador) {
         driver = navegador;
     }
-    private By title = By.className("page-heading");
+    private By title = By.cssSelector("h1");
     private By btnFirstAdress = By.cssSelector("a[title='Add my first address']");
     private By btnOrderHistory = By.className("icon-list-ol");
     private By btnMyCreditSlips = By.className("icon-file-o");
@@ -25,16 +25,19 @@ public class MyAccountPage extends Actions {
     }
 
     public void clickBtnOrderHistory(){
+
         click(btnOrderHistory);
     }
 
     public void clickBtnMyCreditSlips(){
         click(btnMyCreditSlips);
     }
+
     public void clickBtnMyAdress(){
         click(btnMyAdress);
     }
     public void clickBtnPersonalInformation(){
+
         click(btnPersonalInformation);
     }
 
