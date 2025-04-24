@@ -39,11 +39,3 @@
     Quando clicar no botao My personal information
     Entao o sistema redirecionara para a pagina de informacoes pessoais
 
-
-#      Exemplos:
-#        | fluxo                        |
-#        | Acessar Add My First Address |
-#        | Acessar Order History And Details |
-#        | My Credit Slipls                  |
-#        | My Adress                         |
-#        | My Personal Information           |
