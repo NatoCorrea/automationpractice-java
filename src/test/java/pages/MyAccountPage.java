@@ -14,7 +14,7 @@ public class MyAccountPage extends Actions {
     private By btnOrderHistory = By.className("icon-list-ol");
     private By btnMyCreditSlips = By.className("icon-file-o");
     private By btnMyAdress = By.cssSelector("a[title='Addresses']");
-    private By btnPersonalInformation = By.cssSelector("icon-user");
+    private By btnPersonalInformation = By.cssSelector("a[title=Information]");
 
     public String validaMyAccountPage(){
       return get_text(title);
